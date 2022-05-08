@@ -1,6 +1,6 @@
 package com.avantys.user.cmd.infrastructure.consumers;
 
-import com.avantys.user.cmd.api.events.RegisterStudentEvent;
+import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import com.avantys.user.cmd.infrastructure.handlers.EventHandler;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,9 +18,9 @@ public class StudentEventConsumer implements EventConsumer{
     @Autowired
     private EventHandler eventHandler;
 
-    @KafkaListener(topics = "RegisterStudentEvent", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "Cancer", groupId = "${spring.kafka.consumer.group-id}")
     @Override
-    public void consume(RegisterStudentEvent event, Acknowledgment ack) {
+    public void consume(StudentRegisteredEvent event, Acknowledgment ack) {
         eventHandler.on(event);
         ack.acknowledge();
     }

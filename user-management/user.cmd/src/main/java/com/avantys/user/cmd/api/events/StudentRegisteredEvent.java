@@ -18,7 +18,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class RegisterStudentEvent extends BaseEvent {
+public class StudentRegisteredEvent extends BaseEvent {
     private String studentId;
     private PaymentMethod paymentMethod;
     private Date createdDate;

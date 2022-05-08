@@ -1,6 +1,6 @@
 package com.avantys.user.cmd.infrastructure.handlers;
 
-import com.avantys.user.cmd.api.events.RegisterStudentEvent;
+import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import com.avantys.user.cmd.domain.Student;
 import com.avantys.user.cmd.domain.StudentRepository;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
@@ -23,7 +23,7 @@ public class StudentEventHandler implements EventHandler{
      * Called from the consume method in AccountEventConsumer after a new AccountOpenedEvent has been published.
      */
     @Override
-    public void on(RegisterStudentEvent event) {
+    public void on(StudentRegisteredEvent event) {
         var student = Student.builder()
                 .studentId(event.getId())
                 .paymentMethod(event.getPaymentMethod())

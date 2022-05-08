@@ -3,7 +3,7 @@ package com.avantys.user.cmd.domain;
 import com.avantys.user.cmd.api.commands.RegisterStudentCommand;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
-import com.avantys.user.cmd.api.events.RegisterStudentEvent;
+import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
@@ -22,7 +22,7 @@ import java.util.Date;
     public StudentAggregate(RegisterStudentCommand command){
 
         // Call the super class raiseEvent method and event from the aggregate to combine CQRS and event sourcing
-        super.raiseEvent(RegisterStudentEvent.builder()
+        super.raiseEvent(StudentRegisteredEvent.builder()
                 .id(command.getId())
                 .isAssessed(command.getIsAssessed())
                 .isAccepted(command.getIsAccepted())
@@ -35,7 +35,7 @@ import java.util.Date;
      * Because reflection is used, multiple apply methods can be handled.
      * This apply method applies the AccountOpenedEvent to the aggregate.
      */
-    public void apply(RegisterStudentEvent event){
+    public void apply(StudentRegisteredEvent event){
         this.id = event.getId();
         this.active = true;
 //        this.balance = event.getOpeningBalance();
