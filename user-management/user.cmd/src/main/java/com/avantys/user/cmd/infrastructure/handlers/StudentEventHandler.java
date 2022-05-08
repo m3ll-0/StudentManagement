@@ -1,9 +1,9 @@
 package com.avantys.user.cmd.infrastructure.handlers;
 
+import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import com.avantys.user.cmd.domain.Student;
 import com.avantys.user.cmd.domain.StudentRepository;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
-import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

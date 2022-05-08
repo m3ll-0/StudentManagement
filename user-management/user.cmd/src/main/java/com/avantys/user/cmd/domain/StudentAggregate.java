@@ -2,8 +2,8 @@ package com.avantys.user.cmd.domain;
 
 import com.avantys.user.cmd.api.commands.RegisterStudentCommand;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
-import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
+import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
