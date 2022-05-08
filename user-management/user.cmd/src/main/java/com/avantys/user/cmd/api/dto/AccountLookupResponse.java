@@ -1,7 +1,7 @@
-package com.avantys.user.query.api.dto;
+package com.avantys.user.cmd.api.dto;
 
+import com.avantys.user.cmd.domain.Student;
 import com.avantys.user.common.dto.BaseResponse;
-import com.avantys.user.query.domain.Student;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

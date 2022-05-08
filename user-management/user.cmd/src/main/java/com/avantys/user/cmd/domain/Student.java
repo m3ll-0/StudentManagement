@@ -1,4 +1,4 @@
-package com.avantys.user.query.domain;
+package com.avantys.user.cmd.domain;
 
 import com.avantys.cqrs.core.domain.BaseEntity;
 import com.avantys.user.common.dto.PaymentMethod;

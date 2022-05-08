@@ -1,9 +1,7 @@
-package com.avantys.user.query.domain;
+package com.avantys.user.cmd.domain;
 
-import com.avantys.cqrs.core.domain.BaseEntity;
 import org.springframework.data.repository.CrudRepository;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface StudentRepository extends CrudRepository<Student, String> {

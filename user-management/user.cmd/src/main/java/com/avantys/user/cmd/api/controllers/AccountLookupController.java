@@ -1,12 +1,12 @@
-package com.avantys.user.query.api.controllers;
+package com.avantys.user.cmd.api.controllers;
 
-import com.avantys.user.query.api.dto.AccountLookupResponse;
-import com.avantys.user.query.api.dto.EqualityType;
-import com.avantys.user.query.domain.Student;
-import com.avantys.user.query.api.queries.FindStudentByStudentIdQuery;
-import com.avantys.user.query.api.queries.FindAccountWithBalanceQuery;
-import com.avantys.user.query.api.queries.FindAccountsByIdQuery;
-import com.avantys.user.query.api.queries.FindAllAccountsQuery;
+import com.avantys.user.cmd.api.dto.AccountLookupResponse;
+import com.avantys.user.cmd.api.dto.EqualityType;
+import com.avantys.user.cmd.api.queries.FindAccountWithBalanceQuery;
+import com.avantys.user.cmd.api.queries.FindAccountsByIdQuery;
+import com.avantys.user.cmd.api.queries.FindAllAccountsQuery;
+import com.avantys.user.cmd.api.queries.FindStudentByStudentIdQuery;
+import com.avantys.user.cmd.domain.Student;
 import com.avantys.cqrs.core.infrastructure.QueryDispatcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

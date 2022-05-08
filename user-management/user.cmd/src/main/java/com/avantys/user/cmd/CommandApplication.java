@@ -1,7 +1,10 @@
 package com.avantys.user.cmd;
 
+import com.avantys.cqrs.core.infrastructure.QueryDispatcher;
 import com.avantys.user.cmd.api.commands.*;
 import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
+import com.avantys.user.cmd.api.queries.FindStudentByStudentIdQuery;
+import com.avantys.user.cmd.api.queries.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,5 +28,16 @@ public class CommandApplication {
 	public void registerHandlers(){
 		commandDispatcher.registerHandler(RegisterStudentCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(AcceptStudentCommand.class, commandHandler::handle);
+	}
+
+	@Autowired
+	private QueryDispatcher queryDispatcher;
+
+	@Autowired
+	private QueryHandler queryHandler;
+
+	@PostConstruct
+	public void registerHandlersQuery(){
+		queryDispatcher.registerHandler(FindStudentByStudentIdQuery.class, queryHandler::handle);
 	}
 }

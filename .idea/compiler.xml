@@ -10,7 +10,6 @@
         <module name="cqrs.core" />
         <module name="user.common" />
         <module name="user.cmd" />
-        <module name="user.query" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
