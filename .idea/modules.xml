@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/code3.iml" filepath="$PROJECT_DIR$/.idea/code3.iml" />
       <module fileurl="file://$PROJECT_DIR$/cqrs-es/cqrs.core/cqrs.core.iml" filepath="$PROJECT_DIR$/cqrs-es/cqrs.core/cqrs.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-management/user.cmd/user.cmd.iml" filepath="$PROJECT_DIR$/user-management/user.cmd/user.cmd.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/user.common/user.common.iml" filepath="$PROJECT_DIR$/user-management/user.common/user.common.iml" />
     </modules>
   </component>
 </project>

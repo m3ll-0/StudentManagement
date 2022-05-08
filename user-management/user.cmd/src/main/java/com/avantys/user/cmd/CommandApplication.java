@@ -20,6 +20,12 @@ public class CommandApplication {
 	@Autowired
 	private CommandHandler commandHandler;
 
+	@Autowired
+	private QueryDispatcher queryDispatcher;
+
+	@Autowired
+	private QueryHandler queryHandler;
+
 	public static void main(String[] args) {
 		SpringApplication.run(CommandApplication.class, args);
 	}
@@ -29,12 +35,6 @@ public class CommandApplication {
 		commandDispatcher.registerHandler(RegisterStudentCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(AcceptStudentCommand.class, commandHandler::handle);
 	}
-
-	@Autowired
-	private QueryDispatcher queryDispatcher;
-
-	@Autowired
-	private QueryHandler queryHandler;
 
 	@PostConstruct
 	public void registerHandlersQuery(){

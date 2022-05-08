@@ -16,9 +16,7 @@
 
     <modules>
         <module>../cqrs-es/cqrs.core</module>
-        <module>user.common</module>
         <module>user.cmd</module>
-        <module>user.query</module>
     </modules>
 
 </project>

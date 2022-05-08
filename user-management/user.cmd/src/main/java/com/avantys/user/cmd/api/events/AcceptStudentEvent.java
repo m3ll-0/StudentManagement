@@ -1,4 +1,4 @@
-package com.avantys.user.common.events;
+package com.avantys.user.cmd.api.events;
 
 import com.avantys.cqrs.core.events.BaseEvent;
 import lombok.AllArgsConstructor;

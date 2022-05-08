@@ -2,7 +2,7 @@ package com.avantys.user.cmd.api.controllers;
 
 import com.avantys.user.cmd.api.commands.AcceptStudentCommand;
 import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
-import com.avantys.user.common.dto.BaseResponse;
+import com.avantys.user.cmd.api.dto.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

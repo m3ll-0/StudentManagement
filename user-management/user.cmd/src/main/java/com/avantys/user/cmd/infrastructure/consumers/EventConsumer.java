@@ -1,7 +1,7 @@
 package com.avantys.user.cmd.infrastructure.consumers;
 
-import com.avantys.user.common.events.AcceptStudentEvent;
-import com.avantys.user.common.events.RegisterStudentEvent;
+import com.avantys.user.cmd.api.events.AcceptStudentEvent;
+import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.handler.annotation.Payload;
 

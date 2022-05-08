@@ -1,6 +1,5 @@
 package com.avantys.user.cmd.api.dto;
 
-import com.avantys.user.common.dto.BaseResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

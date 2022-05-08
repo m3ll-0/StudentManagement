@@ -1,4 +1,4 @@
-package com.avantys.user.common.dto;
+package com.avantys.user.cmd.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

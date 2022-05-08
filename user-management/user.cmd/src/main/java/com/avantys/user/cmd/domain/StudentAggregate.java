@@ -1,8 +1,8 @@
 package com.avantys.user.cmd.domain;
 
 import com.avantys.user.cmd.api.commands.RegisterStudentCommand;
-import com.avantys.user.common.events.AcceptStudentEvent;
-import com.avantys.user.common.events.RegisterStudentEvent;
+import com.avantys.user.cmd.api.events.AcceptStudentEvent;
+import com.avantys.user.cmd.api.events.RegisterStudentEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
 import lombok.NoArgsConstructor;
 

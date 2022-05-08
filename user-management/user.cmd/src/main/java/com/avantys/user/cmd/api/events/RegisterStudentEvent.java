@@ -1,7 +1,7 @@
-package com.avantys.user.common.events;
+package com.avantys.user.cmd.api.events;
 
 import com.avantys.cqrs.core.events.BaseEvent;
-import com.avantys.user.common.dto.PaymentMethod;
+import com.avantys.user.cmd.api.dto.PaymentMethod;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

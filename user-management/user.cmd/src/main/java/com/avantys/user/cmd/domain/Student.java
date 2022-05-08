@@ -1,7 +1,7 @@
 package com.avantys.user.cmd.domain;
 
 import com.avantys.cqrs.core.domain.BaseEntity;
-import com.avantys.user.common.dto.PaymentMethod;
+import com.avantys.user.cmd.api.dto.PaymentMethod;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
