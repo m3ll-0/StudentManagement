@@ -40,4 +40,12 @@ public class StudentCommandHandler implements CommandHandler {
         aggregate.assessStudent(command.isAssessed());
         eventSourcingHandler.save(aggregate);
     }
+
+    @Override
+    public void handle(AuthorizePaymentMethodCommand command) {
+        var aggregate = eventSourcingHandler.getById(command.getId());
+        command.setPaymentMethod(command.getPaymentMethod());
+        aggregate.authorizePaymentMethod (command.getPaymentMethod());
+        eventSourcingHandler.save(aggregate);
+    }
 }

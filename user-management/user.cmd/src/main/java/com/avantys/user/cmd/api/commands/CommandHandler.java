@@ -8,5 +8,5 @@ public interface CommandHandler {
     void handle(RegisterStudentCommand command);
     void handle(AcceptStudentCommand command);
     void handle(AssessStudentCommand command);
-
+    void handle(AuthorizePaymentMethodCommand command);
 }

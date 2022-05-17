@@ -6,6 +6,6 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class FindAccountsByIdQuery extends BaseQuery {
+public class FindStudentByIdQuery extends BaseQuery {
     private String id;
 }

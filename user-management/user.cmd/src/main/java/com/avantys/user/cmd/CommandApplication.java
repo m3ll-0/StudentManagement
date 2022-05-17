@@ -3,6 +3,8 @@ package com.avantys.user.cmd;
 import com.avantys.cqrs.core.infrastructure.QueryDispatcher;
 import com.avantys.user.cmd.api.commands.*;
 import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
+import com.avantys.user.cmd.api.queries.FindAllStudentsQuery;
+import com.avantys.user.cmd.api.queries.FindStudentByIdQuery;
 import com.avantys.user.cmd.api.queries.FindStudentByStudentIdQuery;
 import com.avantys.user.cmd.api.queries.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,15 +32,17 @@ public class CommandApplication {
 		SpringApplication.run(CommandApplication.class, args);
 	}
 
-	@PostConstruct // Tell spring to execute the method after the initialization of the bean properties
+	// Tell spring to execute the method after the initialization of the bean properties
+	@PostConstruct
 	public void registerHandlers(){
+		// Register command handlers
 		commandDispatcher.registerHandler(RegisterStudentCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(AcceptStudentCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(AssessStudentCommand.class, commandHandler::handle);
-	}
+		commandDispatcher.registerHandler(AuthorizePaymentMethodCommand.class, commandHandler::handle);
 
-	@PostConstruct
-	public void registerHandlersQuery(){
-		queryDispatcher.registerHandler(FindStudentByStudentIdQuery.class, queryHandler::handle);
+		// Register query handlers
+		queryDispatcher.registerHandler(FindAllStudentsQuery.class, queryHandler::handle);
+		queryDispatcher.registerHandler(FindStudentByIdQuery.class, queryHandler::handle);
 	}
 }

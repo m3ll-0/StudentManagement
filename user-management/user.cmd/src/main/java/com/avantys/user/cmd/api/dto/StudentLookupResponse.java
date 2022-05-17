@@ -12,10 +12,10 @@ import java.util.List;
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AccountLookupResponse extends BaseResponse {
-    private List<Student> accounts;
+public class StudentLookupResponse extends BaseResponse {
+    private List<Student> students;
 
-    public AccountLookupResponse(String message){
+    public StudentLookupResponse(String message){
         super(message);
     }
 }

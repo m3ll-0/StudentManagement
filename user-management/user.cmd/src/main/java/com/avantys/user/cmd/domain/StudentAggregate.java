@@ -1,9 +1,11 @@
 package com.avantys.user.cmd.domain;
 
 import com.avantys.user.cmd.api.commands.RegisterStudentCommand;
+import com.avantys.user.cmd.api.dto.PaymentMethod;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
 import com.avantys.user.cmd.api.events.AssessStudentEvent;
+import com.avantys.user.cmd.api.events.AuthorizePaymentMethodEvent;
 import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import lombok.NoArgsConstructor;
 
@@ -17,6 +19,7 @@ import java.util.Date;
     private boolean active;
     private boolean isAccepted;
     private boolean isAssessed;
+    private PaymentMethod paymentMethod;
 
     /**
      * The OpenAccountCommand creates the aggregate hence it is being handled in the constructor
@@ -85,5 +88,24 @@ import java.util.Date;
     public void apply(AssessStudentEvent event){
         this.id = event.getId();
         this.isAssessed = event.isAssessed();
+    }
+
+    public void authorizePaymentMethod(PaymentMethod paymentMethod){
+
+        // todo
+        if(1 == 2){
+            throw new IllegalStateException("The deposited amount must be greater than 0");
+        } else {
+            super.raiseEvent(AuthorizePaymentMethodEvent.builder()
+                    .id(this.id)
+                    .paymentMethod(paymentMethod)
+                    .build()
+            );
+        }
+    }
+
+    public void apply(AuthorizePaymentMethodEvent event){
+        this.id = event.getId();
+        this.paymentMethod = event.getPaymentMethod();
     }
 }

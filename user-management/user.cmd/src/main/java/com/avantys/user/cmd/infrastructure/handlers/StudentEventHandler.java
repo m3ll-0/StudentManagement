@@ -1,6 +1,7 @@
 package com.avantys.user.cmd.infrastructure.handlers;
 
 import com.avantys.user.cmd.api.events.AssessStudentEvent;
+import com.avantys.user.cmd.api.events.AuthorizePaymentMethodEvent;
 import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import com.avantys.user.cmd.domain.Student;
 import com.avantys.user.cmd.domain.StudentRepository;
@@ -59,6 +60,18 @@ public class StudentEventHandler implements EventHandler{
         }
 
         student.get().setAssessed(true);
+        studentRepository.save(student.get());
+    }
+
+    @Override
+    public void on(AuthorizePaymentMethodEvent event) {
+        var student = studentRepository.findById(event.getId());
+
+        if(student.isEmpty()){
+            return;
+        }
+
+        student.get().setPaymentMethod(event.getPaymentMethod());
         studentRepository.save(student.get());
     }
 }
