@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/user-management/Bank.iml" filepath="$PROJECT_DIR$/user-management/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-management/Avantys.iml" filepath="$PROJECT_DIR$/user-management/Avantys.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/code4.iml" filepath="$PROJECT_DIR$/.idea/code4.iml" />
       <module fileurl="file://$PROJECT_DIR$/cqrs-es/cqrs.core/cqrs.core.iml" filepath="$PROJECT_DIR$/cqrs-es/cqrs.core/cqrs.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-management/user.cmd/user.cmd.iml" filepath="$PROJECT_DIR$/user-management/user.cmd/user.cmd.iml" />

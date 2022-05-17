@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AcceptStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AcceptStudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AssessStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AssessStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <updated>1652039322561</updated>
       <workItem from="1652039323759" duration="3070000" />
       <workItem from="1652737636341" duration="1148000" />
-      <workItem from="1652786117357" duration="9582000" />
+      <workItem from="1652786117357" duration="9736000" />
     </task>
     <servers />
   </component>

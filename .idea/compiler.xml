@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Bank" target="17" />
+      <module name="Avantys" target="17" />
       <module name="cqrs.core" target="17" />
       <module name="user.cmd" target="17" />
     </bytecodeTargetLevel>
