@@ -26,13 +26,13 @@ public class AcceptStudentController {
         try{
             command.setId(id);
             commandDispatcher.send(command); // Send command to registered command handlers
-            return new ResponseEntity<>(new BaseResponse("Deposit funds completed."), HttpStatus.CREATED);
+            return new ResponseEntity<>(new BaseResponse("Accept student request completed."), HttpStatus.CREATED);
         } catch (IllegalStateException e){ // Handle client errors
             logger.log(Level.WARNING, "Client made a bad request - " + e.toString());
             return new ResponseEntity<>(new BaseResponse(e.toString()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){ // Internal server errors
-            logger.log(Level.SEVERE,"Error while processing request to deposit funds");
-            return new ResponseEntity<>(new BaseResponse("Error while processing request to deposit"), HttpStatus.BAD_REQUEST);
+            logger.log(Level.SEVERE,"Error while processing request to accept student.");
+            return new ResponseEntity<>(new BaseResponse("Error while processing request accept student."), HttpStatus.BAD_REQUEST);
         }
 
     }
