@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +44,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="CommandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -68,7 +73,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652039322561</updated>
-      <workItem from="1652039323759" duration="266000" />
+      <workItem from="1652039323759" duration="3070000" />
+      <workItem from="1652737636341" duration="1148000" />
+      <workItem from="1652786117357" duration="789000" />
     </task>
     <servers />
   </component>
@@ -77,5 +84,26 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -18,7 +18,7 @@ public class StudentEventConsumer implements EventConsumer{
     @Autowired
     private EventHandler eventHandler;
 
-    @KafkaListener(topics = "Cancer", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "StudentRegisteredEvent", groupId = "${spring.kafka.consumer.group-id}")
     @Override
     public void consume(StudentRegisteredEvent event, Acknowledgment ack) {
         eventHandler.on(event);
