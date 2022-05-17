@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The AccountCommandDispatcher class is the concrete implementation of the CommandDispatcher class.
+ * The StudentCommandDispatcher class is the concrete implementation of the CommandDispatcher class.
  * It functions as the concrete mediator in the mediator pattern. It is responsible for
  */
 @Service

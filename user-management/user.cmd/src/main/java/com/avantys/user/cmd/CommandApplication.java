@@ -5,7 +5,6 @@ import com.avantys.user.cmd.api.commands.*;
 import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
 import com.avantys.user.cmd.api.queries.FindAllStudentsQuery;
 import com.avantys.user.cmd.api.queries.FindStudentByIdQuery;
-import com.avantys.user.cmd.api.queries.FindStudentByStudentIdQuery;
 import com.avantys.user.cmd.api.queries.QueryHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

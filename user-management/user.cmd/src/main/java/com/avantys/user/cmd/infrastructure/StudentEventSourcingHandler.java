@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Comparator;
 
 /**
- * AccountEventSourcingHandler class implements the EventSourcingHandler interface
+ * StudentEventSourcingHandler class implements the EventSourcingHandler interface
  */
 @Service
 public class StudentEventSourcingHandler implements EventSourcingHandler<StudentAggregate> {
@@ -20,7 +20,7 @@ public class StudentEventSourcingHandler implements EventSourcingHandler<Student
 
     /**
      * Save the uncommitted changes (events) to the eventStore and mark it as committed (clear the list of changes).
-     * Is being called from the handle() method in the AccountCommandHandler class.
+     * Is being called from the handle() method in the StudentCommandHandler class.
      */
     @Override
     public void save(AggregateRoot aggregateRoot) {

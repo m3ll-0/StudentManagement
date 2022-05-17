@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * The AccountCommandHandler class implements the CommandHandler interface.
+ * The StudentCommandHandler class implements the CommandHandler interface.
  * It is the concrete implementation of the colleague in the mediator pattern.
  */
 @Service
@@ -16,7 +16,7 @@ public class StudentCommandHandler implements CommandHandler {
     @Autowired
     private EventSourcingHandler<StudentAggregate> eventSourcingHandler;
 
-    // Handle the openAccountCommand
+    // Handle the RegisterStudentCommand
     @Override
     public void handle(RegisterStudentCommand command) {
         var aggregate = new StudentAggregate(command);

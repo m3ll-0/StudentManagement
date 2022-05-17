@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * AccountQueryDispatcher implements the queryDispatcher interface.
+ * StudentQueryDispatcher implements the queryDispatcher interface.
  * It is the concrete implementation of the mediator queryDispatcher.
  */
 @Service

@@ -30,7 +30,7 @@ public class StudentEventStore implements EventStore {
 
     /**
      * Saves events to the write-database and produces events to Kafka.
-     * Called from the save() method of the AccountEventSourcingHandler, which in turn is being called from a commandHandler.
+     * Called from the save() method of the StudentEventSourcingHandler, which in turn is being called from a commandHandler.
      */
     @Override
     public void saveEvents(String aggregateId, Iterable<BaseEvent> events, int expectedVersion) {
@@ -67,14 +67,14 @@ public class StudentEventStore implements EventStore {
 
     /**
      * Returns a list of events from the eventStoreRepository (from the write database) by a given aggregateId.
-     * Is called from the getById method in the AccountEventSourcingHandler to recreate the latest state of the aggregate.
+     * Is called from the getById method in the StudentEventSourcingHandler to recreate the latest state of the aggregate.
      */
     @Override
     public List<BaseEvent> getEvents(String aggregateId) {
         var eventStream = eventStoreRepository.findByAggregateIdentifier(aggregateId);
 
         if(eventStream == null || eventStream.isEmpty()){
-            throw new AggregateNotFoundException("Incorrect account ID provided!");
+            throw new AggregateNotFoundException("Incorrect student ID provided!");
         }
 
         // Translate the eventStream into to list of baseEvents

@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/AuthorizePaymentMethodCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AuthorizePaymentMethodController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/events/AuthorizePaymentMethodEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cqrs-es/cqrs.core/src/main/java/com/avantys/cqrs/core/domain/AggregateRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/cqrs-es/cqrs.core/src/main/java/com/avantys/cqrs/core/domain/AggregateRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/CommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AccountLookupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/LookupStudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/dto/AccountLookupResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/dto/StudentLookupResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindAccountsByIdQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindStudentByIdQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindAllAccountsQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindAllStudentsQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/QueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/QueryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/StudentQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/StudentQueryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/RegisterStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/RegisterStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindAccountWithBalanceQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/queries/FindStudentByStudentIdQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentCommandDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentCommandDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentEventSourcingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentEventSourcingHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentQueryDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentQueryDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +96,7 @@
       <updated>1652039322561</updated>
       <workItem from="1652039323759" duration="3070000" />
       <workItem from="1652737636341" duration="1148000" />
-      <workItem from="1652786117357" duration="8824000" />
+      <workItem from="1652786117357" duration="9251000" />
     </task>
     <servers />
   </component>

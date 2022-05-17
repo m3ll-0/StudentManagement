@@ -10,9 +10,9 @@ import lombok.experimental.SuperBuilder;
 import java.util.Date;
 
 /**
- * The AccountOpenedEvent extends the BaseEvent class which extends the Message class.
+ * The StudentRegisteredEvent extends the BaseEvent class which extends the Message class.
  * The event resides in the common packages because both the query and command projects make use of this class.
- * This is the event that is raised after the OpenAccountCommand is handled.
+ * This is the event that is raised after the RegisterStudentCommand is handled.
  */
 @Data
 @NoArgsConstructor

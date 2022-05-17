@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * The AccountAggregate extends the AggregateRoot, and it is an entity or group of entities in DDD.
+ * The StudentAggregate extends the AggregateRoot, and it is an entity or group of entities in DDD.
  */
 @NoArgsConstructor
     public class StudentAggregate extends AggregateRoot {
@@ -22,7 +22,7 @@ import java.util.Date;
     private PaymentMethod paymentMethod;
 
     /**
-     * The OpenAccountCommand creates the aggregate hence it is being handled in the constructor
+     * The RegisterStudentCommand creates the aggregate hence it is being handled in the constructor
      */
     public StudentAggregate(RegisterStudentCommand command){
 
@@ -38,7 +38,7 @@ import java.util.Date;
 
     /**
      * Because reflection is used, multiple apply methods can be handled.
-     * This apply method applies the AccountOpenedEvent to the aggregate.
+     * This apply method applies the StudentRegisteredEvent to the aggregate.
      */
     public void apply(StudentRegisteredEvent event){
         this.id = event.getId();
@@ -47,9 +47,6 @@ import java.util.Date;
     }
 
     public void acceptStudent(boolean isAccepted ){
-//        if(!this.active){
-//            throw new IllegalStateException("Funds cannot be deposited into a closed bank account");
-//        }
 
         this.isAccepted = true;
 

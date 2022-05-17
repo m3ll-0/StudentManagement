@@ -32,7 +32,7 @@ public abstract class AggregateRoot {
 
     /**
      * Return list of changes (in the form of events) made to the aggregate.
-     * This is called by the AccountEventSourcingHandler as an argument to pass to the eventStore.
+     * This is called by the StudentEventSourcingHandler as an argument to pass to the eventStore.
      * The event store receives the changes and publishes them to the write-database.
      */
     public List<BaseEvent> getUncommitedChanges(){
@@ -41,7 +41,7 @@ public abstract class AggregateRoot {
 
     /**
      * Clear the list of changes so that when new events are added, they are new changes.
-     * This is called after the event has been saved in the eventStore in the AccountEventSourcingHandler.
+     * This is called after the event has been saved in the eventStore in the StudentEventSourcingHandler.
      */
     public void markChangesAsCommitted(){
         this.changes.clear();
@@ -75,13 +75,13 @@ public abstract class AggregateRoot {
 
     public void raiseEvent(BaseEvent event){
         // ApplyChange to the event and mark it as true because the event is new when being called from raiseEvent.
-        // This method is called from the AccountAggregate after a certain command is received
+        // This method is called from the StudentAggregate after a certain command is received
         applyChange(event, true);
     }
 
     /**
      * For each event, apply change, but with false as these are all the events that are used to rebuild the state of the aggregate.
-     * Is being called from the AccountEventSourcingHandler to recreate the state of the aggregate *
+     * Is being called from the StudentEventSourcingHandler to recreate the state of the aggregate *
      */
     public void replayEvents(Iterable<BaseEvent> events){
         events.forEach(event -> applyChange(event, false));

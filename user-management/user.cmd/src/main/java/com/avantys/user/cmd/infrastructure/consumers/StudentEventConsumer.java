@@ -12,7 +12,7 @@ import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Service;
 
 /**
- * AccountEventConsumer implements the EventConsumer interface.
+ * StudentEventConsumer implements the EventConsumer interface.
  * Is responsible for consuming events from the message broker, and then calling the appropriate eventHandler which will
  * in turn save an event to the read database.
  */

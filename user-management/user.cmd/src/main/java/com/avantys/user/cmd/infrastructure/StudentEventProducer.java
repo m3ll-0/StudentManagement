@@ -7,7 +7,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 /**
- * AccountEventProducer implements the EventProducer interface, which signifies that it is a producer that produces events
+ * StudentEventProducer implements the EventProducer interface, which signifies that it is a producer that produces events
  * to the message broker.
  */
 @Service

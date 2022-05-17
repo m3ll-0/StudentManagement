@@ -25,19 +25,19 @@ public class RegisterStudentController {
     private CommandDispatcher commandDispatcher;
 
     @PostMapping
-    public ResponseEntity<BaseResponse> openAccount(@RequestBody RegisterStudentCommand command){
+    public ResponseEntity<BaseResponse> registerStudent(@RequestBody RegisterStudentCommand command){
         var id = UUID.randomUUID().toString();
         command.setId(id);
 
         try{
             commandDispatcher.send(command);
-            return new ResponseEntity<>(new RegisterStudentResponse("Bank account creation request completed.", id), HttpStatus.CREATED);
+            return new ResponseEntity<>(new RegisterStudentResponse("Student registration request completed.", id), HttpStatus.CREATED);
         } catch (IllegalStateException e){
             logger.log(Level.WARNING, "Client made a bad request - " + e.toString());
             return new ResponseEntity<>(new BaseResponse(e.toString()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
-            logger.log(Level.SEVERE,"Error while processing request to open a new account");
-            return new ResponseEntity<>(new RegisterStudentResponse("Error while processing request to open a new account", id), HttpStatus.BAD_REQUEST);
+            logger.log(Level.SEVERE,"Error while processing request to register a new student");
+            return new ResponseEntity<>(new RegisterStudentResponse("Error while processing request to register a new student", id), HttpStatus.BAD_REQUEST);
         }
     }
 }

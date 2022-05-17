@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * AccountEventHandler implements the EventHandler interface.
+ * StudentEventHandler implements the EventHandler interface.
  * Handle all events, and by doing so populate or alter the read database
  * Difference between eventHandler and eventSourcingHandler: The eventHandler resides at the query side and affects
  * the read database, the eventSourcingHandler resides in the command side
@@ -22,7 +22,7 @@ public class StudentEventHandler implements EventHandler{
 
     /**
      * Save a new record into the read database.
-     * Called from the consume method in AccountEventConsumer after a new AccountOpenedEvent has been published.
+     * Called from the consume method in StudentEventConsumer after a new StudentRegisteredEvent has been published.
      */
     @Override
     public void on(StudentRegisteredEvent event) {
@@ -37,7 +37,7 @@ public class StudentEventHandler implements EventHandler{
     }
 
     /**
-     * Instead of building a new entity, retrieve it from the repository (as it already exists) and save it to the accountRepository.
+     * Instead of building a new entity, retrieve it from the repository (as it already exists) and save it to the studentRepository.
      */
     @Override
     public void on(AcceptStudentEvent event) {

@@ -12,7 +12,7 @@
 	<artifactId>user.cmd</artifactId>
 	<version>1.0.0</version>
 	<name>user.cmd</name>
-	<description>Bank account command API project</description>
+	<description>Avantys command API project</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
