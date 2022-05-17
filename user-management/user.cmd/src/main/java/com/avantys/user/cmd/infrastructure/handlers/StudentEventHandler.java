@@ -1,5 +1,6 @@
 package com.avantys.user.cmd.infrastructure.handlers;
 
+import com.avantys.user.cmd.api.events.AssessStudentEvent;
 import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import com.avantys.user.cmd.domain.Student;
 import com.avantys.user.cmd.domain.StudentRepository;
@@ -45,9 +46,19 @@ public class StudentEventHandler implements EventHandler{
             return;
         }
 
-        // todo
-        var isAccepted = student.get().isAccepted();
-        student.get().setAccepted(isAccepted);
+        student.get().setAccepted(true);
+        studentRepository.save(student.get());
+    }
+
+    @Override
+    public void on(AssessStudentEvent event) {
+        var student = studentRepository.findById(event.getId());
+
+        if(student.isEmpty()){
+            return;
+        }
+
+        student.get().setAssessed(true);
         studentRepository.save(student.get());
     }
 }

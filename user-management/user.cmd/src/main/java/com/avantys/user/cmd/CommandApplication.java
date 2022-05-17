@@ -34,6 +34,7 @@ public class CommandApplication {
 	public void registerHandlers(){
 		commandDispatcher.registerHandler(RegisterStudentCommand.class, commandHandler::handle);
 		commandDispatcher.registerHandler(AcceptStudentCommand.class, commandHandler::handle);
+		commandDispatcher.registerHandler(AssessStudentCommand.class, commandHandler::handle);
 	}
 
 	@PostConstruct

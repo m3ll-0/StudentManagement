@@ -1,7 +1,8 @@
 package com.avantys.user.cmd.api.controllers;
 
-import com.avantys.user.cmd.api.commands.AcceptStudentCommand;
 import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
+import com.avantys.user.cmd.api.commands.AcceptStudentCommand;
+import com.avantys.user.cmd.api.commands.AssessStudentCommand;
 import com.avantys.user.cmd.api.dto.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,16 +13,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @RestController
-@RequestMapping("/api/v1/acceptStudent")
-public class AcceptStudentController {
-    private final Logger logger = Logger.getLogger(AcceptStudentController.class.getName());
+@RequestMapping("/api/v1/assessStudent")
+public class AssessStudentController {
+    private final Logger logger = Logger.getLogger(AssessStudentController.class.getName());
 
     @Autowired
     private CommandDispatcher commandDispatcher;
 
     @PutMapping(path = "/{id}")
-    public ResponseEntity<BaseResponse> depositFunds(@PathVariable(value = "id") String id,
-                                                     @RequestBody AcceptStudentCommand command
+    public ResponseEntity<BaseResponse> assessStudent(@PathVariable(value = "id") String id,
+                                                     @RequestBody AssessStudentCommand command
     ){
         try{
             command.setId(id);
@@ -36,6 +37,4 @@ public class AcceptStudentController {
         }
 
     }
-
-
 }

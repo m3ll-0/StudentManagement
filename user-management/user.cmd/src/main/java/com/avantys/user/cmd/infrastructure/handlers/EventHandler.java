@@ -1,6 +1,7 @@
 package com.avantys.user.cmd.infrastructure.handlers;
 
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
+import com.avantys.user.cmd.api.events.AssessStudentEvent;
 import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 
 /**
@@ -9,4 +10,5 @@ import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 public interface EventHandler {
     void on(StudentRegisteredEvent event);
     void on(AcceptStudentEvent event);
+    void on(AssessStudentEvent event);
 }

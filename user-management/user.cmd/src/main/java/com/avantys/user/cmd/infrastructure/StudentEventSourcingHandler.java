@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Comparator;
 
 /**
- * AccountEventSourcingHandler class implements that EventSourcingHandler interface
+ * AccountEventSourcingHandler class implements the EventSourcingHandler interface
  */
 @Service
 public class StudentEventSourcingHandler implements EventSourcingHandler<StudentAggregate> {

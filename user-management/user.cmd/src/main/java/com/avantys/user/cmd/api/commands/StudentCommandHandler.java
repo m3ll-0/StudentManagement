@@ -26,8 +26,18 @@ public class StudentCommandHandler implements CommandHandler {
     @Override
     public void handle(AcceptStudentCommand command) {
         // Get the latest state of the aggregate by invoking getById on the eventSourcingHandler
+        // HIER
         var aggregate = eventSourcingHandler.getById(command.getId());
+        command.setAccepted(true);
         aggregate.acceptStudent(command.isAccepted());
+        eventSourcingHandler.save(aggregate);
+    }
+
+    @Override
+    public void handle(AssessStudentCommand command) {
+        var aggregate = eventSourcingHandler.getById(command.getId());
+        command.setAssessed(true);
+        aggregate.assessStudent(command.isAssessed());
         eventSourcingHandler.save(aggregate);
     }
 }

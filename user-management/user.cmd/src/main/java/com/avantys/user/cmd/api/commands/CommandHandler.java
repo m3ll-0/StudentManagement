@@ -6,6 +6,7 @@ package com.avantys.user.cmd.api.commands;
  */
 public interface CommandHandler {
     void handle(RegisterStudentCommand command);
-
     void handle(AcceptStudentCommand command);
+    void handle(AssessStudentCommand command);
+
 }

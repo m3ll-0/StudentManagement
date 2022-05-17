@@ -19,6 +19,6 @@ public class Student extends BaseEntity {
     @Id
     private String studentId;
     private boolean isAccepted;
-    private Boolean isAssessed;
+    private boolean isAssessed;
     private PaymentMethod paymentMethod;
 }

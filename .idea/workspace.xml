@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/AssessStudentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AssessStudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/events/AssessStudentEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AcceptStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/controllers/AcceptStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/events/AcceptStudentEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/events/AcceptStudentEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentEventSourcingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/StudentEventSourcingHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/EventConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +29,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,11 +46,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -75,7 +99,7 @@
       <updated>1652039322561</updated>
       <workItem from="1652039323759" duration="3070000" />
       <workItem from="1652737636341" duration="1148000" />
-      <workItem from="1652786117357" duration="789000" />
+      <workItem from="1652786117357" duration="5515000" />
     </task>
     <servers />
   </component>
@@ -90,18 +114,58 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/CommandApplication.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/consumers/StudentEventConsumer.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/api/commands/StudentCommandHandler.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/domain/StudentAggregate.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/cmd/infrastructure/handlers/StudentEventHandler.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

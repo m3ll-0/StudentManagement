@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- * The FundsDepositedEvent extends the BaseEvent class which extends the Message class.
+ * The AcceptStudentEvent extends the BaseEvent class which extends the Message class.
  * The event resides in the common packages because both the query and command projects make use of this class.
  * This is the event that is raised after the FundsDepositedCommand is handled.
  */

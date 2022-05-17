@@ -3,6 +3,7 @@ package com.avantys.user.cmd.domain;
 import com.avantys.user.cmd.api.commands.RegisterStudentCommand;
 import com.avantys.user.cmd.api.events.AcceptStudentEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
+import com.avantys.user.cmd.api.events.AssessStudentEvent;
 import com.avantys.user.cmd.api.events.StudentRegisteredEvent;
 import lombok.NoArgsConstructor;
 
@@ -15,6 +16,7 @@ import java.util.Date;
     public class StudentAggregate extends AggregateRoot {
     private boolean active;
     private boolean isAccepted;
+    private boolean isAssessed;
 
     /**
      * The OpenAccountCommand creates the aggregate hence it is being handled in the constructor
@@ -42,9 +44,11 @@ import java.util.Date;
     }
 
     public void acceptStudent(boolean isAccepted ){
-        if(!this.active){
-            throw new IllegalStateException("Funds cannot be deposited into a closed bank account");
-        }
+//        if(!this.active){
+//            throw new IllegalStateException("Funds cannot be deposited into a closed bank account");
+//        }
+
+        this.isAccepted = true;
 
         // todo
         if(1 == 2){
@@ -61,5 +65,25 @@ import java.util.Date;
     public void apply(AcceptStudentEvent event){
         this.id = event.getId();
         this.isAccepted = event.isAccepted();
+    }
+
+
+    public void assessStudent(boolean isAssessed ){
+
+        // todo
+        if(1 == 2){
+            throw new IllegalStateException("The deposited amount must be greater than 0");
+        } else {
+            super.raiseEvent(AssessStudentEvent.builder()
+                    .id(this.id)
+                    .isAssessed(isAssessed)
+                    .build()
+            );
+        }
+    }
+
+    public void apply(AssessStudentEvent event){
+        this.id = event.getId();
+        this.isAssessed = event.isAssessed();
     }
 }
