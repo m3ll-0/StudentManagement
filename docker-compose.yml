@@ -6,6 +6,7 @@ networks:
 
 services:
   zookeeper:
+    container_name: zookeeper-container-avantys
     networks:
       - Avantys
     image: bitnami/zookeeper
@@ -17,6 +18,7 @@ services:
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
   kafka:
+    container_name: kafka-container-avantys
     networks:
       - Avantys
     image: bitnami/kafka

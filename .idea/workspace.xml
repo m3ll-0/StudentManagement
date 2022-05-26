@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_techbank_cqrs_core_1_0_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +68,11 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mihae\Documents\code4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CommandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user.cmd" />
@@ -86,7 +92,11 @@
       <updated>1652039322561</updated>
       <workItem from="1652039323759" duration="3070000" />
       <workItem from="1652737636341" duration="1148000" />
-      <workItem from="1652786117357" duration="12679000" />
+      <workItem from="1652786117357" duration="13825000" />
+      <workItem from="1652823968666" duration="7178000" />
+      <workItem from="1652879836576" duration="3011000" />
+      <workItem from="1653494060162" duration="1556000" />
+      <workItem from="1653592603354" duration="7227000" />
     </task>
     <servers />
   </component>
@@ -108,41 +118,6 @@
           <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/infrastructure/consumers/StudentEventConsumer.java</url>
           <line>33</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/commands/StudentCommandHandler.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/commands/StudentCommandHandler.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/commands/StudentCommandHandler.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -43,23 +43,17 @@ import java.util.Date;
     public void apply(StudentRegisteredEvent event){
         this.id = event.getId();
         this.active = true;
-//        this.balance = event.getOpeningBalance();
     }
 
     public void acceptStudent(boolean isAccepted ){
 
         this.isAccepted = true;
 
-        // todo
-        if(1 == 2){
-            throw new IllegalStateException("The deposited amount must be greater than 0");
-        } else {
-            super.raiseEvent(AcceptStudentEvent.builder()
-                    .id(this.id)
-                    .isAccepted(isAccepted)
-                    .build()
-            );
-        }
+        super.raiseEvent(AcceptStudentEvent.builder()
+                .id(this.id)
+                .isAccepted(isAccepted)
+                .build()
+        );
     }
 
     public void apply(AcceptStudentEvent event){
@@ -70,16 +64,11 @@ import java.util.Date;
 
     public void assessStudent(boolean isAssessed ){
 
-        // todo
-        if(1 == 2){
-            throw new IllegalStateException("The deposited amount must be greater than 0");
-        } else {
-            super.raiseEvent(AssessStudentEvent.builder()
-                    .id(this.id)
-                    .isAssessed(isAssessed)
-                    .build()
-            );
-        }
+        super.raiseEvent(AssessStudentEvent.builder()
+                .id(this.id)
+                .isAssessed(isAssessed)
+                .build()
+        );
     }
 
     public void apply(AssessStudentEvent event){
@@ -89,16 +78,11 @@ import java.util.Date;
 
     public void authorizePaymentMethod(PaymentMethod paymentMethod){
 
-        // todo
-        if(1 == 2){
-            throw new IllegalStateException("The deposited amount must be greater than 0");
-        } else {
-            super.raiseEvent(AuthorizePaymentMethodEvent.builder()
-                    .id(this.id)
-                    .paymentMethod(paymentMethod)
-                    .build()
-            );
-        }
+        super.raiseEvent(AuthorizePaymentMethodEvent.builder()
+                .id(this.id)
+                .paymentMethod(paymentMethod)
+                .build()
+        );
     }
 
     public void apply(AuthorizePaymentMethodEvent event){
