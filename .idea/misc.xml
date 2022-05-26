@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/cqrs-es/cqrs.core/pom.xml" />
         <option value="$PROJECT_DIR$/user-management/pom.xml" />
+        <option value="$PROJECT_DIR$/student-management/pom.xml" />
       </list>
     </option>
   </component>
