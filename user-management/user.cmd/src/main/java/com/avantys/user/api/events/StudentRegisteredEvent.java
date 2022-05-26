@@ -20,6 +20,14 @@ import java.util.Date;
 @SuperBuilder
 public class StudentRegisteredEvent extends BaseEvent {
     private String studentId;
+    private String firstName;
+    private String lastName;
+    private String dateOfBirth;
+    private String email;
+    private String telephoneNr;
+    private String zipCode;
+    private String streetName;
+    private String houseNumber;
     private PaymentMethod paymentMethod;
     private Date createdDate;
     private Boolean isAssessed;

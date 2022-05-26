@@ -11,6 +11,14 @@ import lombok.Data;
 @Data
 public class RegisterStudentCommand extends BaseCommand {
     private String studentId;
+    private String firstName;
+    private String lastName;
+    private String dateOfBirth;
+    private String email;
+    private String telephoneNr;
+    private String zipCode;
+    private String streetName;
+    private String houseNumber;
     private PaymentMethod paymentMethod;
     private Boolean isAssessed;
     private Boolean isAccepted;

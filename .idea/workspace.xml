@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_techbank_cqrs_core_1_0_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/commands/RegisterStudentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/commands/RegisterStudentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/events/StudentRegisteredEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/api/events/StudentRegisteredEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/user.cmd/src/main/java/com/avantys/user/domain/StudentAggregate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       <workItem from="1652823968666" duration="7178000" />
       <workItem from="1652879836576" duration="3011000" />
       <workItem from="1653494060162" duration="1556000" />
-      <workItem from="1653592603354" duration="7227000" />
+      <workItem from="1653592603354" duration="10120000" />
     </task>
     <servers />
   </component>

@@ -29,6 +29,13 @@ import java.util.Date;
         // Call the super class raiseEvent method and event from the aggregate to combine CQRS and event sourcing
         super.raiseEvent(StudentRegisteredEvent.builder()
                 .id(command.getId())
+                        .firstName(command.getFirstName())
+                        .lastName(command.getLastName())
+                        .dateOfBirth(command.getDateOfBirth())
+                        .telephoneNr(command.getTelephoneNr())
+                        .zipCode(command.getZipCode())
+                        .streetName(command.getStreetName())
+                        .houseNumber(command.getHouseNumber())
                 .isAssessed(command.getIsAssessed())
                 .isAccepted(command.getIsAccepted())
                 .paymentMethod(command.getPaymentMethod())
