@@ -5,43 +5,45 @@ networks:
     external: false
 
 services:
-  zookeeper:
-    container_name: zookeeper-container-avantys
-    networks:
-      - Avantys
-    image: bitnami/zookeeper
-    restart: always
-    ports:
-      - "2181:2181"
-    volumes:
-      - "zookeeper_data:/bitnami"
-    environment:
-      - ALLOW_ANONYMOUS_LOGIN=yes
-  kafka:
-    container_name: kafka-container-avantys
-    networks:
-      - Avantys
-    image: bitnami/kafka
-    ports:
-      - "9092:9092"
-    restart: always
-    volumes:
-      - "kafka_data:/bitnami"
-    environment:
-      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
-      - ALLOW_PLAINTEXT_LISTENER=yes
-      - KAFKA_LISTENERS=PLAINTEXT://:9092
-      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
-    depends_on:
-      - zookeeper
+#  zookeeper:
+#    container_name: zookeeper-container-avantys
+#    networks:
+#      - Avantys
+#    image: bitnami/zookeeper
+#    restart: always
+#    ports:
+#      - "2181:2181"
+#    volumes:
+#      - "zookeeper_data:/bitnami"
+#    environment:
+#      - ALLOW_ANONYMOUS_LOGIN=yes
+#
+#  kafka:
+#    container_name: kafka-container-avantys
+#    networks:
+#      - Avantys
+#    image: bitnami/kafka
+#    ports:
+#      - "9092:9092"
+#    restart: always
+#    volumes:
+#      - "kafka_data:/bitnami"
+#    environment:
+#      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+#      - ALLOW_PLAINTEXT_LISTENER=yes
+#      - KAFKA_LISTENERS=PLAINTEXT://:9092
+#      - KAFKA_ADVERTISED_HOST_NAME:kafka
+#      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+#    depends_on:
+#      - zookeeper
 
-  db:
+  docker-mysql:
     networks:
       - Avantys
     ports:
       - 3306:3306
     container_name: mysql-container-avantys
-    image: mysql
+    image: mysql:5.7
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -79,8 +81,29 @@ services:
     networks:
       - Avantys
 
-volumes:
-  zookeeper_data:
-    driver: local
-  kafka_data:
-    driver: local
+  avantys-student-management:
+    container_name: avantys-student-management
+    build:
+      context: student-management
+      dockerfile: Dockerfile
+    image: avantys-student-management:latest
+    ports:
+      - 5000:5000
+    networks:
+      - Avantys
+    depends_on:
+      - rabbitmq
+      - mongo
+      - adminer
+      - docker-mysql
+    restart: on-failure
+#      - kafka
+#      - zookeeper
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/student?createDatabaseIfNotExist=true
+#
+#volumes:
+#  zookeeper_data:
+#    driver: local
+#  kafka_data:
+#    driver: local

@@ -4,33 +4,37 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: mongo
       port: 27017
       database: student
-  kafka:
-    producer:
-      bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    listener:
-      ack-mode: RECORD
-    consumer:
-        bootstrap-servers: localhost:9092
-        group-id: studentConsumer
-        auto-offset-reset: earliest
-        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-        value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-        properties:
-          spring:
-            json:
-              trusted:
-                packages: '*'
+#  kafka:
+#    producer:
+#      bootstrap-servers: ${KAFKA_ADVERTISED_HOST_NAME}:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#    listener:
+#      ack-mode: RECORD
+#    consumer:
+#        bootstrap-servers: ${KAFKA_ADVERTISED_HOST_NAME}:9092
+#        group-id: studentConsumer
+#        auto-offset-reset: earliest
+#        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#        value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#        properties:
+#          spring:
+#            json:
+#              trusted:
+#                packages: '*'
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/student?createDatabaseIfNotExist=true
+    url: jdbc:mysql://host.docker.internal:3306/student?createDatabaseIfNotExist=true
     username: root
     password: root
+  rabbitmq:
+    username: guest
+    password: guest
+    addresses: host.docker.internal:5672

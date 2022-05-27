@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef5ea1-142d-436a-8e99-848a165d04f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/AcceptStudentEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/StudentAcceptedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/AssessStudentEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/StudentAssessedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/AuthorizePaymentMethodEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/api/events/StudentPaymentMethodAuthorizedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/domain/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/domain/StudentAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/StudentEventStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/StudentEventStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/KafkaStudentEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/KafkaStudentEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/RabbitStudentEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/consumers/RabbitStudentEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/handlers/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/handlers/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/handlers/StudentEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/java/com/avantys/student/infrastructure/handlers/StudentEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management/student/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/student-management/student/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +98,7 @@
       <workItem from="1652879836576" duration="3011000" />
       <workItem from="1653494060162" duration="1556000" />
       <workItem from="1653592603354" duration="11429000" />
-      <workItem from="1653647175510" duration="11285000" />
+      <workItem from="1653647175510" duration="18910000" />
     </task>
     <servers />
   </component>
