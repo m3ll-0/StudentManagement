@@ -6,9 +6,11 @@ import com.avantys.cqrs.core.infrastructure.CommandDispatcher;
 import com.avantys.student.api.queries.FindAllStudentsQuery;
 import com.avantys.student.api.queries.FindStudentByIdQuery;
 import com.avantys.student.api.queries.QueryHandler;
+import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 import javax.annotation.PostConstruct;
 

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -18,7 +19,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class StudentRegisteredEvent extends BaseEvent {
+public class StudentRegisteredEvent extends BaseEvent implements Serializable {
     private String studentId;
     private String firstName;
     private String lastName;

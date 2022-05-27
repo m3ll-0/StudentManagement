@@ -12,8 +12,8 @@ import org.springframework.messaging.handler.annotation.Payload;
  * @Payload annotations for event binds a method parameter to the payload of a message
  */
 public interface EventConsumer {
-    void consume(@Payload StudentRegisteredEvent event, Acknowledgment ack);
-    void consume(@Payload AcceptStudentEvent event, Acknowledgment ack);
-    void consume(@Payload AssessStudentEvent event, Acknowledgment ack);
-    void consume(@Payload AuthorizePaymentMethodEvent event, Acknowledgment ack);
+    void consume(@Payload StudentRegisteredEvent event);
+    void consume(@Payload AcceptStudentEvent event);
+    void consume(@Payload AssessStudentEvent event);
+    void consume(@Payload AuthorizePaymentMethodEvent event);
 }

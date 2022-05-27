@@ -36,6 +36,7 @@ public class RegisterStudentController {
             logger.log(Level.WARNING, "Client made a bad request - " + e.toString());
             return new ResponseEntity<>(new BaseResponse(e.toString()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
+            logger.log(Level.SEVERE, e.toString());
             logger.log(Level.SEVERE,"Error while processing request to register a new student");
             return new ResponseEntity<>(new RegisterStudentResponse("Error while processing request to register a new student", id), HttpStatus.BAD_REQUEST);
         }

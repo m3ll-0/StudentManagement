@@ -1,4 +1,4 @@
-package com.avantys.student.infrastructure;
+package com.avantys.student.infrastructure.producers;
 
 import com.avantys.cqrs.core.events.BaseEvent;
 import com.avantys.cqrs.core.producers.EventProducer;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * to the message broker.
  */
 @Service
-public class StudentEventProducer implements EventProducer {
+public class KafkaStudentEventProducer implements EventProducer {
 
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
