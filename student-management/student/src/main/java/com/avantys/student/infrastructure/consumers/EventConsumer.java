@@ -1,10 +1,9 @@
 package com.avantys.student.infrastructure.consumers;
 
-import com.avantys.student.api.events.AcceptStudentEvent;
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
-import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.handler.annotation.Payload;
 
 /**
@@ -13,7 +12,7 @@ import org.springframework.messaging.handler.annotation.Payload;
  */
 public interface EventConsumer {
     void consume(@Payload StudentRegisteredEvent event);
-    void consume(@Payload AcceptStudentEvent event);
-    void consume(@Payload AssessStudentEvent event);
-    void consume(@Payload AuthorizePaymentMethodEvent event);
+    void consume(@Payload StudentAcceptedEvent event);
+    void consume(@Payload StudentAssessedEvent event);
+    void consume(@Payload StudentPaymentMethodAuthorizedEvent event);
 }

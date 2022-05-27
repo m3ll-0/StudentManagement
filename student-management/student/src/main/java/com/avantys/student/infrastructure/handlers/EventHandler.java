@@ -1,8 +1,8 @@
 package com.avantys.student.infrastructure.handlers;
 
-import com.avantys.student.api.events.AcceptStudentEvent;
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
 
 /**
@@ -10,7 +10,7 @@ import com.avantys.student.api.events.StudentRegisteredEvent;
  */
 public interface EventHandler {
     void on(StudentRegisteredEvent event);
-    void on(AcceptStudentEvent event);
-    void on(AssessStudentEvent event);
-    void on(AuthorizePaymentMethodEvent event);
+    void on(StudentAcceptedEvent event);
+    void on(StudentAssessedEvent event);
+    void on(StudentPaymentMethodAuthorizedEvent event);
 }

@@ -15,6 +15,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class AcceptStudentEvent extends BaseEvent {
+public class StudentAcceptedEvent extends BaseEvent {
     private boolean isAccepted;
 }

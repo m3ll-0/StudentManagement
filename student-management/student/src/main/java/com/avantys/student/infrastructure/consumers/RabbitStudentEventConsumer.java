@@ -1,9 +1,8 @@
 package com.avantys.student.infrastructure.consumers;
 
-import com.avantys.student.api.controllers.AcceptStudentController;
-import com.avantys.student.api.events.AcceptStudentEvent;
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
 import com.avantys.student.infrastructure.handlers.EventHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -27,17 +26,17 @@ public class RabbitStudentEventConsumer implements EventConsumer
     }
 
     @RabbitHandler()
-    public void consume(@Payload AcceptStudentEvent event) {
+    public void consume(@Payload StudentAcceptedEvent event) {
         eventHandler.on(event);
     }
 
     @RabbitHandler()
-    public void consume(@Payload AssessStudentEvent event) {
+    public void consume(@Payload StudentAssessedEvent event) {
         eventHandler.on(event);
     }
 
     @RabbitHandler()
-    public void consume(@Payload AuthorizePaymentMethodEvent event) {
+    public void consume(@Payload StudentPaymentMethodAuthorizedEvent event) {
         eventHandler.on(event);
     }
 }

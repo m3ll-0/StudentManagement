@@ -1,11 +1,11 @@
 package com.avantys.student.infrastructure.handlers;
 
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
 import com.avantys.student.domain.Student;
 import com.avantys.student.domain.StudentRepository;
-import com.avantys.student.api.events.AcceptStudentEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,7 +40,7 @@ public class StudentEventHandler implements EventHandler{
      * Instead of building a new entity, retrieve it from the repository (as it already exists) and save it to the studentRepository.
      */
     @Override
-    public void on(AcceptStudentEvent event) {
+    public void on(StudentAcceptedEvent event) {
         var student = studentRepository.findById(event.getId());
 
         if(student.isEmpty()){
@@ -52,7 +52,7 @@ public class StudentEventHandler implements EventHandler{
     }
 
     @Override
-    public void on(AssessStudentEvent event) {
+    public void on(StudentAssessedEvent event) {
         var student = studentRepository.findById(event.getId());
 
         if(student.isEmpty()){
@@ -64,7 +64,7 @@ public class StudentEventHandler implements EventHandler{
     }
 
     @Override
-    public void on(AuthorizePaymentMethodEvent event) {
+    public void on(StudentPaymentMethodAuthorizedEvent event) {
         var student = studentRepository.findById(event.getId());
 
         if(student.isEmpty()){

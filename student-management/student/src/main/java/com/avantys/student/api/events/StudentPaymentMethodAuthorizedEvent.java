@@ -11,6 +11,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public class AuthorizePaymentMethodEvent extends BaseEvent{
+public class StudentPaymentMethodAuthorizedEvent extends BaseEvent{
     private PaymentMethod paymentMethod;
 }

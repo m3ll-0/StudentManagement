@@ -2,10 +2,10 @@ package com.avantys.student.domain;
 
 import com.avantys.student.api.commands.RegisterStudentCommand;
 import com.avantys.student.api.dto.PaymentMethod;
-import com.avantys.student.api.events.AcceptStudentEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
 import com.avantys.cqrs.core.domain.AggregateRoot;
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
 import lombok.NoArgsConstructor;
 
@@ -56,14 +56,14 @@ import java.util.Date;
 
         this.isAccepted = true;
 
-        super.raiseEvent(AcceptStudentEvent.builder()
+        super.raiseEvent(StudentAcceptedEvent.builder()
                 .id(this.id)
                 .isAccepted(isAccepted)
                 .build()
         );
     }
 
-    public void apply(AcceptStudentEvent event){
+    public void apply(StudentAcceptedEvent event){
         this.id = event.getId();
         this.isAccepted = event.isAccepted();
     }
@@ -71,28 +71,28 @@ import java.util.Date;
 
     public void assessStudent(boolean isAssessed ){
 
-        super.raiseEvent(AssessStudentEvent.builder()
+        super.raiseEvent(StudentAssessedEvent.builder()
                 .id(this.id)
                 .isAssessed(isAssessed)
                 .build()
         );
     }
 
-    public void apply(AssessStudentEvent event){
+    public void apply(StudentAssessedEvent event){
         this.id = event.getId();
         this.isAssessed = event.isAssessed();
     }
 
     public void authorizePaymentMethod(PaymentMethod paymentMethod){
 
-        super.raiseEvent(AuthorizePaymentMethodEvent.builder()
+        super.raiseEvent(StudentPaymentMethodAuthorizedEvent.builder()
                 .id(this.id)
                 .paymentMethod(paymentMethod)
                 .build()
         );
     }
 
-    public void apply(AuthorizePaymentMethodEvent event){
+    public void apply(StudentPaymentMethodAuthorizedEvent event){
         this.id = event.getId();
         this.paymentMethod = event.getPaymentMethod();
     }

@@ -58,7 +58,7 @@ public class StudentEventStore implements EventStore {
             // Save the event to the write-database using the eventStoreRepository
             var persistedEvent = eventStoreRepository.save(eventModel);
 
-            // Produce event to Kafka
+            // Produce event
             if(!persistedEvent.getId().isEmpty()){
                 eventProducer.produce(event.getClass().getSimpleName(), event);
             }

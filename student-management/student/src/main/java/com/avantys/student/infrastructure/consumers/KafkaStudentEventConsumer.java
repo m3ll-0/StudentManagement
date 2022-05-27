@@ -1,10 +1,10 @@
 package com.avantys.student.infrastructure.consumers;
 
-import com.avantys.student.api.events.AssessStudentEvent;
-import com.avantys.student.api.events.AuthorizePaymentMethodEvent;
+import com.avantys.student.api.events.StudentAssessedEvent;
+import com.avantys.student.api.events.StudentPaymentMethodAuthorizedEvent;
 import com.avantys.student.api.events.StudentRegisteredEvent;
 import com.avantys.student.infrastructure.handlers.EventHandler;
-import com.avantys.student.api.events.AcceptStudentEvent;
+import com.avantys.student.api.events.StudentAcceptedEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -25,21 +25,21 @@ public class KafkaStudentEventConsumer implements EventConsumer{
         eventHandler.on(event);
     }
 
-    @KafkaListener(topics = "AcceptStudentEvent", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "StudentAcceptedEvent", groupId = "${spring.kafka.consumer.group-id}")
     @Override
-    public void consume(AcceptStudentEvent event) {
+    public void consume(StudentAcceptedEvent event) {
         eventHandler.on(event);
     }
 
-    @KafkaListener(topics = "AssessStudentEvent", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "StudentAssessedEvent", groupId = "${spring.kafka.consumer.group-id}")
     @Override
-    public void consume(AssessStudentEvent event) {
+    public void consume(StudentAssessedEvent event) {
         eventHandler.on(event);
     }
 
-    @KafkaListener(topics = "AuthorizePaymentMethodEvent", groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "StudentPaymentMethodAuthorizedEvent", groupId = "${spring.kafka.consumer.group-id}")
     @Override
-    public void consume(AuthorizePaymentMethodEvent event) {
+    public void consume(StudentPaymentMethodAuthorizedEvent event) {
         eventHandler.on(event);
     }
 }
